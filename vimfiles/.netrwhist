@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='D:/Program Files/Vim/vimfiles/plugin'
-let g:netrw_dirhist_2='D:/Program Files/Vim/vim73/doc'

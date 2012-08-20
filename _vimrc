@@ -90,6 +90,10 @@ set ssop+=sesdir "session options
 set cul "cursor line
 "set cuc "cursor culumn
 
+set noeb "noerrorbells
+set novb "novisualbell
+set vb t_vb=
+
 let g:vimim_map=3
 map <F4> :call g:Jsbautify()<CR>
 
