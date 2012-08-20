@@ -1,10 +1,10 @@
 let mapleader=","
-map <silent> <leader>ss :so /etc/vimrc<cr>
-map <silent> <leader>ee :e /etc/vimrc<cr>
+map <silent> <leader>ss :so /etc/gvimrc<cr>
+map <silent> <leader>ee :e /etc/gvimrc<cr>
 map <silent> <leader>wo :so session.vim<cr>
 map <silent> <leader>ww :mks!<cr>
 
-au! bufwritepost vimrc so /etc/vimrc "autocmd
+au! bufwritepost gvimrc so /etc/gvimrc "autocmd
 
 " CTRL-Tab is Next window
 noremap <C-Tab> <C-W>w
@@ -12,15 +12,15 @@ inoremap <C-Tab> <C-O><C-W>w
 cnoremap <C-Tab> <C-C><C-W>w
 onoremap <C-Tab> <C-C><C-W>w
 
-color solarized
-winpos 50 40
+colo murphy "color
+winpos 100 40
 syntax on
 filetype on
 filetype plugin on
 filetype indent on
 
 set nocp "nocompatible
-set lines=40 columns=140
+set lines=40 columns=120
 set nocuc 
 set noswf "noswapfile
 set nobk "nobackup
