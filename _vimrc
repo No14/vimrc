@@ -92,35 +92,7 @@ set cul "cursor line
 
 set noeb "noerrorbells
 set novb "novisualbell
-set vb t_vb=
+"set vb t_vb=
 
 let g:vimim_map=3
 map <F4> :call g:Jsbautify()<CR>
-
-map <silent> <leader>ew :e $vim/workspace<cr>
-map <silent> <leader>sw :so $vim/workspace<cr>
-"workspace: set path+=
-"if filereadable("$vim/workspace")
-so $vim/workspace "source
-"endif
-
-" 输入一个字符时，如果下一个字符也是括号，则删除它，避免出现重复字符
-function! RemoveNextDoubleChar(char)
-    let l:line = getline(".")
-    let l:next_char = l:line[col(".")] " 取得当前光标后一个字符
-    if a:char == l:next_char
-        execute "normal! l"
-    else
-        execute "normal! i" . a:char . ""
-    end
-endfunction
-
-" 插入匹配括号
-"inoremap ( ()<LEFT>
-"inoremap [ []<LEFT>
-"inoremap { {}<LEFT>
-
-"inoremap ) <ESC>:call RemoveNextDoubleChar(')')<CR>a
-"inoremap ] <ESC>:call RemoveNextDoubleChar(']')<CR>a
-"inoremap } <ESC>:call RemoveNextDoubleChar('}')<CR>a
-
