@@ -34,7 +34,7 @@ let mapleader=","
 map <silent> <leader>ss :so $vim/_vimrc<cr>
 map <silent> <leader>ee :e $vim/_vimrc<cr>
 map <silent> <leader>wo :so session.vim<cr>
-map <silent> <leader>ww :mks!
+map <silent> <leader>ww :mks!<cr>
 
 au! bufwritepost _vimrc so $vim/_vimrc "autocmd
 map <silent> <leader>,mf GUIEnter * simalt ~x
