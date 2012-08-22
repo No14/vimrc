@@ -96,3 +96,5 @@ set novb "novisualbell
 
 let g:vimim_map=3
 map <F4> :call g:Jsbautify()<CR>
+
+let g:solarized_bold=0    "default value is 1
