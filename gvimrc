@@ -64,3 +64,11 @@ set vb t_vb=
 let g:vimim_map=3
 map <F4> :call g:Jsbautify()<CR>
 
+"solarized color scheme options
+":h solarized
+let g:solarized_menu=0
+let g:solarized_bold=0    "default value is 1
+color solarized
+
+"vimim
+let g:vimim_cloud=-1
