@@ -46,7 +46,6 @@ inoremap <C-Tab> <C-O><C-W>w
 cnoremap <C-Tab> <C-C><C-W>w
 onoremap <C-Tab> <C-C><C-W>w
 
-color solarized
 winpos 80 40
 syntax on
 filetype on
@@ -97,4 +96,11 @@ set novb "novisualbell
 let g:vimim_map=3
 map <F4> :call g:Jsbautify()<CR>
 
+"solarized color scheme options
+":h solarized
+let g:solarized_menu=0
 let g:solarized_bold=0    "default value is 1
+color solarized
+
+"vimim
+let g:vimim_cloud=-1
