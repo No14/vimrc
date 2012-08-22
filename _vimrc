@@ -33,8 +33,8 @@ endfunction
 let mapleader=","
 map <silent> <leader>ss :so $vim/_vimrc<cr>
 map <silent> <leader>ee :e $vim/_vimrc<cr>
-map <silent> <leader>wo :so session.vim<cr>
-map <silent> <leader>ww :mks!<cr>
+map <silent> <leader>oo :so session.vim<cr>
+map <silent> <leader>mm :mks!<cr>
 
 au! bufwritepost _vimrc so $vim/_vimrc "autocmd
 map <silent> <leader>,mf GUIEnter * simalt ~x
@@ -69,8 +69,8 @@ set wmnu "wild menu
 set hls "highlight search
 set ic "ignorecase
 
-"set gfn=consolas:h11
-set gfn=menlo:h10
+set gfn=consolas:h11
+"set gfn=menlo:h11
 set ts=2 "tab stop
 set sts=2 "soft tab stop
 set sw=2 "shift width
